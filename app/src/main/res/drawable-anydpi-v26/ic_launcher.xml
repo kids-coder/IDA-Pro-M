@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- IDA Pro M Logo - Binary/Hexagon Theme -->
+    
+    <!-- Background hexagon shape -->
+    <path
+        android:pathData="M54,6 L94,26 L94,82 L54,102 L14,82 L14,26 Z"
+        android:fillColor="#1565C0"
+        android:strokeColor="#0D47A1"
+        android:strokeWidth="2"/>
+    
+    <!-- Inner hexagon -->
+    <path
+        android:pathData="M54,18 L78,32 L78,76 L54,88 L30,76 L30,32 Z"
+        android:fillColor="#1976D2"
+        android:strokeColor="#1565C0"
+        android:strokeWidth="1"/>
+    
+    <!-- Central "M" letter -->
+    <path
+        android:pathData="M38,42 L42,42 L42,66 L46,66 C46,66 48,68 50,68 C52,68 54,67 56,64 L56,58 L56,42 L60,42 L60,62 C60,63 59,65 55,65 C51,65 48,63 45,60 L44,58 L40,36 L36,58 L35,60 C31,63 28,65 24,65 C20,65 17,63 17,58 L16,56 L12,34 L20,34 L20,42 L24,42 L28,42 L28,52 L32,52 L32,42 Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Circuit traces (decorative) -->
+    <path
+        android:pathData="M10,54 Q30,40 50,54 T90,54"
+        android:fillColor="none"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+    
+    <path
+        android:pathData="M10,54 Q30,70 50,54 T90,54"
+        android:fillColor="none"
+        android:strokeColor="#FF9800"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"/>
+    
+    <!-- Data nodes (decorative dots) -->
+    <circle
+        android:cx="20"
+        android:cy="47"
+        android:r="3"
+        android:fillColor="#4CAF50"/>
+    
+    <circle
+        android:cx="88"
+        android:cy="47"
+        android:r="3"
+        android:fillColor="#FF9800"/>
+    
+    <circle
+        android:cx="54"
+        android:cy="95"
+        android:r="3"
+        android:fillColor="#F44336"/>
+</vector>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - IDA Pro Blue Theme -->
+    <color name="ida_blue_primary">#1565C0</color>
+    <color name="ida_blue_onPrimary">#FFFFFF</color>
+    <color name="ida_blue_primaryContainer">#D3E3FD</color>
+    <color name="ida_blue_onPrimaryContainer">#001D36</color>
+
+    <!-- Secondary Colors -->
+    <color name="ida_secondary">#5B8DD9</color>
+    <color name="ida_onSecondary">#FFFFFF</color>
+    <color name="ida_secondaryContainer">#D6E3F7</color>
+    <color name="ida_onSecondaryContainer">#0C3566</color>
+
+    <!-- Tertiary Colors -->
+    <color name="ida_tertiary">#006687</color>
+    <color name="ida_onTertiary">#FFFFFF</color>
+    <color name="ida_tertiaryContainer">#A8EDFF</color>
+    <color name="ida_onTertiaryContainer">#001F2A</color>
+
+    <!-- Error Colors -->
+    <color name="ida_error">#BA1A1A</color>
+    <color name="ida_onError">#FFFFFF</color>
+    <color name="ida_errorContainer">#FFDAD6</color>
+    <color name="ida_onErrorContainer">#410002</color>
+
+    <!-- Background Colors -->
+    <color name="ida_background">#FEF7FF</color>
+    <color name="ida_onBackground">#1D1B20</color>
+    <color name="ida_surface">#FEF7FF</color>
+    <color name="ida_onSurface">#1D1B20</color>
+    <color name="ida_surfaceVariant">#E7E0EC</color>
+    <color name="ida_onSurfaceVariant">#49454F</color>
+
+    <!-- Disassembly Syntax Highlighting Colors -->
+    <color name="syntax_mnemonic">#0000FF</color>
+    <color name="syntax_register">#228B22</color>
+    <color name="syntax_immediate">#FF8C00</color>
+    <color name="syntax_memory">#8B008B</color>
+    <color name="syntax_label">#4169E1</color>
+    <color name="syntax_comment">#808080</color>
+    <color name="syntax_string">#A31515</color>
+    <color name="syntax_keyword">#0000CD</color>
+    <color name="syntax_directive">#800080</color>
+    <color name="syntax_address">#008080</color>
+
+    <!-- Hex Editor Colors -->
+    <color name="hex_background">#FFFFFF</color>
+    <color name="hex_text">#212121</color>
+    <color name="hex_offset_bg">#E3F2FD</color>
+    <color name="hex_offset_text">#1565C0</color>
+    <color name="hex_ascii_bg">#FAFAFA</color>
+    <color name="hex_selection">#BBDEFB</color>
+    <color name="hex_modified">#FFCDD2</color>
+    <color name="hex_highlight">#FFF9C4</color>
+
+    <!-- Graph View Colors -->
+    <color name="graph_node_fill">#E3F2FD</color>
+    <color name="graph_node_stroke">#1565C0</color>
+    <color name="graph_node_text">#1D1B20</color>
+    <color name="graph_edge_default">#49454F</color>
+    <color name="graph_edge_true">#4CAF50</color>
+    <color name="graph_edge_false">#F44336</color>
+    <color name="graph_entry_node">#E8F5E9</color>
+    <color name="graph_exit_node">#FFEBEE</color>
+    <color name="graph_conditional_node">#FFF3E0</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#4CAF50</color>
+    <color name="status_warning">#FF9800</color>
+    <color name="status_error">#F44336</color>
+    <color name="status_info">#2196F3</color>
+
+    <!-- Dark Theme Overrides -->
+    <color name="dark_ida_background">#121212</color>
+    <color name="dark_ida_onBackground">#E6E1E5</color>
+    <color name="dark_ida_surface">#1E1E1E</color>
+    <color name="dark_ida_onSurface">#E6E1E5</color>
+    <color name="dark_ida_surfaceVariant">#49454F</color>
+    <color name="dark_ida_onSurfaceVariant">#CAC4D0</color>
+    
+    <!-- Dark Syntax Highlighting -->
+    <color name="dark_syntax_mnemonic">#569CD6</color>
+    <color name="dark_syntax_register">#4EC9B0</color>
+    <color name="dark_syntax_immediate">#CE9178</color>
+    <color name="dark_syntax_memory">#B4CEFB</color>
+    <color name="dark_syntax_label">#DCDCAA</color>
+    <color name="dark_syntax_comment">#6A9955</color>
+    <color name="dark_syntax_string">#CE9178</color>
+    <color name="dark_syntax_keyword">#569CD6</color>
+    <color name="dark_syntax_directive">#C586C0</color>
+    <color name="dark_syntax_address">#9CDCFE</color>
+
+    <!-- Dark Hex Editor -->
+    <color name="dark_hex_background">#1E1E1E</color>
+    <color name="dark_hex_text">#D4D4D4</color>
+    <color name="dark_hex_offset_bg">#252526</color>
+    <color name="dark_hex_offset_text">#9CDCFE</color>
+    <color name="dark_hex_selection">#264F78</color>
+    <color name="dark_hex_modified">#5A1D1D</color>
+    <color name="dark_hex_highlight">#655F00</color>
+
+    <!-- Common -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider">#1F000000</color>
+    <color name="divider_dark">#33FFFFFF</color>
+</resources>

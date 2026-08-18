@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme - Light -->
+    <style name="Theme.IDAProM" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/ida_surface</item>
+        <item name="android:navigationBarColor">@color/ida_surface</item>
+        <item name="android:windowBackground">@color/ida_background</item>
+        <item name="android:colorBackground">@color/ida_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.IDAProM.Dark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/dark_ida_surface</item>
+        <item name="android:navigationBarColor">@color/dark_ida_surface</item>
+        <item name="android:windowBackground">@color/dark_ida_background</item>
+        <item name="android:colorBackground">@color/dark_ida_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <!-- AMOLED Black Theme (Pure Black) -->
+    <style name="Theme.IDAProM.AMOLED" parent="Theme.IDAProM.Dark">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:colorBackground">#000000</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.IDAProM.Splash" parent="Theme.IDAProM">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="Theme.IDAProM.Dialog" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+    </style>
+
+    <!-- Bottom Sheet Theme -->
+    <style name="Theme.IDAProM.BottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.IDAProM.BottomSheet.Modal</item>
+    </style>
+
+    <style name="Widget.IDAProM.BottomSheet.Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <!-- Text Styles for Disassembly View -->
+    <style name="DisasmText.Mnemonic">
+        <item name="android:textColor">@color/syntax_mnemonic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DisasmText.Register">
+        <item name="android:textColor">@color/syntax_register</item>
+    </style>
+
+    <style name="DisasmText.Immediate">
+        <item name="android:textColor">@color/syntax_immediate</item>
+    </style>
+
+    <style name="DisasmText.Memory">
+        <item name="android:textColor">@color/syntax_memory</item>
+    </style>
+
+    <style name="DisasmText.Label">
+        <item name="android:textColor">@color/syntax_label</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="DisasmText.Comment">
+        <item name="android:textColor">@color/syntax_comment</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Hex Editor Text Styles -->
+    <style name="HexText.Normal">
+        <item name="android:textColor">@color/hex_text</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="HexText.Offset">
+        <item name="android:textColor">@color/hex_offset_text</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="HexText.Modified">
+        <item name="android:textColor">@color/status_error</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.IDAProM.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/ida_blue_primary</item>
+        <item name="android:textColor">@color/ida_blue_onPrimary</item>
+    </style>
+
+    <style name="Widget.IDAProM.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/ida_blue_primary</item>
+        <item name="android:textColor">@color/ida_blue_primary</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.IDAProM.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/ida_surface</item>
+    </style>
+
+    <!-- AppBar Style -->
+    <style name="Widget.IDAProM.AppBar" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:background">@color/ida_surface</item>
+        <item name="elevation">4dp</item>
+    </style>
+</resources>
