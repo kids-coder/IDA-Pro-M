@@ -101,8 +101,15 @@ class AnalysisService : Service() {
      */
     private fun stopAnalysis() {
         isAnalyzing = false
+        analysisJob?.cancel()
         stopForeground(STOP_FOREGROUND_REMOVE)
         stopSelf()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        analysisJob?.cancel()
+        serviceScope.coroutineContext[Job]?.cancel()
     }
 
     /**

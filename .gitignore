@@ -1,0 +1,61 @@
+# Gradle
+.gradle/
+*.gradle
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Build outputs
+build/
+bin/
+out/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Native build
+.cxx/
+*.o
+*.a
+*.so
+
+# IDEs
+.vscode/
+.android/
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+
+# Kotlin
+*.kt.bak
+
+# Local properties
+local.properties
+keystore.properties
+
+# CMake
+cmake_build/
