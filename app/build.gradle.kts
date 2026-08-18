@@ -9,14 +9,16 @@ plugins {
 
 android {
     namespace = "com.mobile.idapro"
-    compileSdk = project.extra["compileSdk"] as Int
+    // Use direct values for reliability with Gradle Configuration Cache
+    // (extra properties can fail in CI due to cache timing issues)
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.mobile.idapro"
-        minSdk = project.extra["minSdk"] as Int
-        targetSdk = project.extra["targetSdk"] as Int
-        versionCode = project.extra["versionCode"] as Int
-        versionName = project.extra["versionName"] as String
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 300
+        versionName = "3.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
@@ -128,20 +130,20 @@ dependencies {
     implementation("androidx.compose.foundation:foundation")
     
     // Navigation Compose
-    implementation("androidx.navigation:navigation-compose:${project.extra["navigationComposeVersion"]}")
+    implementation("androidx.navigation:navigation-compose:2.8.5")
     
     // Lifecycle & ViewModel
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${project.extra["lifecycleVersion"]}")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${project.extra["lifecycleVersion"]}")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:${project.extra["lifecycleVersion"]}")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     
     // Hilt Dependency Injection
-    implementation("com.google.dagger:hilt-android:${project.extra["hiltVersion"]}")
-    ksp("com.google.dagger:hilt-compiler:${project.extra["hiltVersion"]}")
+    implementation("com.google.dagger:hilt-android:2.52")
+    ksp("com.google.dagger:hilt-compiler:2.52")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     
     // Room Database
-    val roomVersion = project.extra["roomVersion"] as String
+    val roomVersion = "2.6.1"
     implementation("androidx.room:room-ktx:$roomVersion")
     implementation("androidx.room:room-runtime:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
@@ -153,7 +155,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     
     // Image Loading (Coil for Compose)
-    implementation("io.coil-kt:coil-compose:${project.extra["coilVersion"]}")
+    implementation("io.coil-kt:coil-compose:2.7.0")
     
     // Material Design Extended
     implementation("androidx.compose.material:material:1.7.5")
@@ -192,8 +194,8 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2024.12.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:${project.extra["hiltVersion"]}")
-    kspAndroidTest("com.google.dagger:hilt-compiler:${project.extra["hiltVersion"]}")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.52")
+    kspAndroidTest("com.google.dagger:hilt-compiler:2.52")
     
     // Debug implementations
     debugImplementation("androidx.compose.ui:ui-tooling")
